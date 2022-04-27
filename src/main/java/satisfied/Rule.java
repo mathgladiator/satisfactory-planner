@@ -53,6 +53,10 @@ public class Rule {
         case "3x0":
         case "4x0":
           return Facility.Manufacturer;
+        case "2x1":
+        case "1x2":
+        case "2x2":
+          return Facility.Blender;
         default:
           throw new UnsupportedOperationException("didn't understand:" + countSolid + "x" + countLiquid);
       }
