@@ -25,7 +25,7 @@ public class Tool {
     System.out.println("----");
     HashMap<Item, Integer> build = rules.seed(request.keySet(), 1);
     System.out.println("Days,Next");
-    double cutOff = 7 * 24 * 60;
+    double cutOff = 24 * 60;
     double time = cutOff * 2;
     while (time > cutOff) {
       time = rules.maxTime(request, build);
